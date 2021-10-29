@@ -4,7 +4,7 @@ const { MongoClient, ConnectionPoolClosedEvent } = require('mongodb');
 const app = express()
 const ObjectId = require('mongodb').ObjectId
 const cors = require('cors')
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 
 app.use(cors ())
