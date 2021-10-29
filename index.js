@@ -64,6 +64,9 @@ run().catch(console.dir);
 app.get('/',(req,res)=>{
 	res.send('hitting the post')
 })
+app.get('/hallow', (req,res)=>{
+	res.send('hallow update here')
+})
 
 
 
